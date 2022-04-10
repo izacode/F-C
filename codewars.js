@@ -28,7 +28,6 @@
 //   return array.reduce((acc, curr) => acc.concat(curr),[]).sort((a,b)=>a-b);
 // }
 
-
 // 4) Make a function that does arithmetic!! =====================================================================================================================
 // function arithmetic(a, b, operator) {
 //   const operations = {
@@ -40,9 +39,6 @@
 
 //   return operations[operator](a, b);
 // }
-
-
-
 
 // 5) Anagram Detection===! =====================================================================================================================================
 // var isAnagram = function(test, original) {
@@ -59,15 +55,13 @@
 //   return [min, max];
 // }
 
-
-
 // 7) Printer Errors        ===================================================================================================================================
 
 // function printerError(s) {
-   
+
 //   let numerator = 0;
 //   let denominator = 0;
-  
+
 //   s.split('').forEach(l=>{
 //     denominator++
 //     if(!l.match(/[a-m]/)){
@@ -78,11 +72,6 @@
 // }
 
 // const printerError = (s) => `${s.replace(/[a-m]/gi, "").length}/${s.length}`; to check replace
-
-
-
-
-
 
 // 8) Sum of a sequence        ===================================================================================================================================
 // Mine
@@ -102,3 +91,33 @@
 //   return begin + sequenceSum(begin + step, end, step);
 // };
 // or   sequenceSum = (b, e, s) => (b > e ? 0 : b + sequenceSum(b + s, e, s));
+
+
+// 9) Predict your age!        ===================================================================================================================================
+// my
+// function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+//   return Math.floor(
+//     Math.sqrt(
+//       Array.from(arguments)
+//         .map((n) => Math.pow(n, 2))
+//         .reduce((acc, val) => acc + val)
+//     ) / 2
+//   );
+// }
+// clever
+// const predictAge = (...ages) => (Math.hypot(...ages) / 2) | 0;
+
+
+// 10) JavaScript Array Filter       ===================================================================================================================================
+
+// function getEvenNumbers(numbersArray) {
+//   return numbersArray.filter((n) => !(n % 2));
+// }
+
+
+
+
+
+
+
+
