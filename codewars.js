@@ -92,7 +92,6 @@
 // };
 // or   sequenceSum = (b, e, s) => (b > e ? 0 : b + sequenceSum(b + s, e, s));
 
-
 // 9) Predict your age!        ===================================================================================================================================
 // my
 // function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
@@ -107,17 +106,21 @@
 // clever
 // const predictAge = (...ages) => (Math.hypot(...ages) / 2) | 0;
 
-
 // 10) JavaScript Array Filter       ===================================================================================================================================
 
 // function getEvenNumbers(numbersArray) {
 //   return numbersArray.filter((n) => !(n % 2));
 // }
 
+// 11) Summing a number's digits       ===================================================================================================================================
 
+// function sumDigits(number) {
+//   return Math.abs(number)
+//     .toString()
+//     .split("")
+//     .reduce((acc, val) => acc + +val, 0);
+// }
 
+// 12) Summing a number's digits       ===================================================================================================================================
 
-
-
-
-
+// const findLongest = (l) =>l.reduce((a, b) => (`${b}`.length > `${a}`.length ? b : a));
